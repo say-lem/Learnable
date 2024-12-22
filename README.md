@@ -56,3 +56,25 @@ By using version control, teams can streamline development processes, improve co
 - Use **`git fetch`** when you want to see what’s new in the remote repository without affecting your current branch.  
 - Use **`git pull`** when you’re ready to update your local branch with the latest changes from the remote.  
 
+
+# Explaining `git rebase`
+
+`git rebase` is a Git command used to integrate changes from one branch into another in a cleaner way compared to merging.
+
+### In Simple Terms:
+Imagine two branches:  
+- `main` (the primary branch).  
+- `develop` (where you're working on new changes as in the case of this work).  
+
+When you use `git rebase`, it takes all the changes from the `develop` branch and "replays" them on top of the `main` branch. This creates a linear, cleaner history without merge commits.  
+
+### Why Use `git rebase`?
+- To keep the commit history clean and easy to understand.  
+- To avoid unnecessary merge commits.  
+
+### Command:
+To rebase your `feature` branch onto `main`, use:  
+```bash
+git checkout feature  
+git rebase main  
+
