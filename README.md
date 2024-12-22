@@ -78,3 +78,22 @@ To rebase your `feature` branch onto `main`, use:
 git checkout feature  
 git rebase main  
 
+
+# Understanding `git cherry-pick`
+
+`git cherry-pick` is a Git command that allows you to apply a specific commit from one branch to another. 
+
+### In Simple Terms:
+Imagine you made a great change in one branch (like fixing a bug or adding a feature), and you want that specific change in another branch without merging everything else.  
+With `git cherry-pick`, you can pick just that commit and apply it.
+
+### Why Use `git cherry-pick`?
+- To bring specific changes from one branch to another.  
+- To avoid merging unnecessary commits.  
+
+### Command:
+To cherry-pick a commit:  
+```bash
+git cherry-pick <commit-hash>
+
+
